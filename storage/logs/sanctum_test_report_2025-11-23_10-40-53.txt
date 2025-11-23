@@ -1,0 +1,76 @@
+SANCTUM SYSTEM TEST REPORT
+Generated: 2025-11-23 10:40:53
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 30
+Passed: 30
+Failed: 0
+Skipped: 0
+Pass Rate: 100%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] TokenAbility enum exists
+
+[PASS] TokenAbility has READ ability
+
+[PASS] TokenAbility::readAbilities() returns array
+
+[PASS] TokenAbility::writeAbilities() returns array
+
+[PASS] TokenAbility::userAbilities() combines read+write
+
+[PASS] TokenAbility::adminAbilities() includes admin
+
+[PASS] User has createApiToken method
+
+[PASS] User has createReadOnlyToken method
+
+[PASS] User has createTokenWithAbilities method
+
+[PASS] User has revokeAllTokens method
+
+[PASS] User has isActive method
+
+[PASS] User isActive returns true
+
+[PASS] Create standard API token
+
+[PASS] Standard token has user abilities
+
+[PASS] Create read-only token
+
+[PASS] Create token with custom abilities
+
+[PASS] Create token with expiration
+
+[PASS] Count user tokens
+
+[PASS] Get active tokens
+
+[PASS] Revoke specific token
+
+[PASS] Revoke all tokens
+
+[PASS] SanctumApiAuthentication middleware exists
+
+[PASS] Middleware handles valid token
+
+[PASS] Middleware rejects missing token
+
+[PASS] Middleware rejects invalid token
+
+[PASS] Middleware checks user active status
+
+[PASS] Expired token is detected
+
+[PASS] Non-expired token works
+
+[PASS] sanctum.api middleware is registered
+
+[PASS] simple.auth middleware still exists (backward compat)

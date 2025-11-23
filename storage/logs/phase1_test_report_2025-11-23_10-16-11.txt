@@ -1,0 +1,54 @@
+PHASE 1 ENDPOINT TEST REPORT
+Generated: 2025-11-23 10:16:11
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 19
+Passed: 19
+Failed: 0
+Skipped: 0
+Pass Rate: 100%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] QuantController can be instantiated
+
+[PASS] SentimentController can be instantiated
+
+[PASS] CircuitBreakerService is registered
+
+[PASS] InstrumentService is available
+
+[PASS] QuantController has indicators method
+
+[PASS] QuantController has trends method
+
+[PASS] QuantController has volatility method
+
+[PASS] QuantController indicators() works with valid symbol
+
+[PASS] QuantController returns 404 for invalid symbol
+
+[PASS] SentimentController has show method
+
+[PASS] SentimentController has news method
+
+[PASS] SentimentController show() works with valid symbol
+
+[PASS] SentimentController returns 404 for invalid symbol
+
+[PASS] Circuit breaker initial state is CLOSED
+
+[PASS] Circuit breaker executes successful calls
+
+[PASS] Circuit breaker records failures
+
+[PASS] Circuit breaker has getStats method
+
+[PASS] Circuit breaker stats have required fields
+
+[PASS] Circuit breaker fallback works

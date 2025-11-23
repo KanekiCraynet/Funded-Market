@@ -1,0 +1,51 @@
+CSRF PROTECTION TEST REPORT
+Generated: 2025-11-23 12:49:24
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 18
+Passed: 17
+Failed: 1
+Pass Rate: 94.4%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] VerifyCsrfToken middleware exists
+
+[PASS] Session configuration exists
+
+[PASS] Session driver is configured
+
+[PASS] CSRF token key is configured
+
+[ERROR: Route [api.health] not defined.] API routes are accessible without CSRF token
+
+[PASS] API prefix is correctly configured
+
+[PASS] Sanctum is configured for SPA
+
+[PASS] Session cookie is HTTP only
+
+[PASS] Session cookie has secure flag configured
+
+[PASS] Session cookie has SameSite attribute
+
+[PASS] Session lifetime is configured
+
+[PASS] Session path is configured
+
+[PASS] Sanctum middleware exists
+
+[PASS] Sanctum stateful domains are configured
+
+[PASS] Sanctum routes are registered
+
+[PASS] Session cookie name is configured
+
+[PASS] Session encryption is enabled
+
+[PASS] App key is set for encryption

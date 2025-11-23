@@ -1,0 +1,68 @@
+PHASE 0 TEST REPORT
+Generated: 2025-11-23 09:59:33
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 26
+Passed: 25
+Failed: 1
+Skipped: 0
+Pass Rate: 96.2%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] Cache driver is Redis
+
+[PASS] Queue connection is Redis
+
+[PASS] Cache prefix is standardized
+
+[PASS] Redis connection works
+
+[PASS] Cache operations work
+
+[PASS] format_number() exists and works
+
+[PASS] format_percent() exists and works
+
+[PASS] format_large_number() exists and works
+
+[PASS] calculate_percentage_change() works
+
+[PASS] safe_division() prevents divide by zero
+
+[PASS] tanh() normalization works
+
+[PASS] clamp() limits values correctly
+
+[PASS] InstrumentService is registered
+
+[FAIL: ] InstrumentService is singleton
+
+[PASS] InstrumentService has getCacheStats method
+
+[PASS] InstrumentService can get cache stats
+
+[PASS] InstrumentService findActiveBySymbol works
+
+[PASS] Cache warming method exists
+
+[PASS] Cache invalidation method exists
+
+[PASS] Cache hit is faster than cache miss
+
+[PASS] Warm cache response time < 10ms
+
+[PASS] Instrument model has invalidateCache method
+
+[PASS] AppServiceProvider has checkRedisHealth method
+
+[PASS] HorizonServiceProvider exists
+
+[PASS] Cache warming job is registered
+
+[PASS] Scheduler configuration is valid

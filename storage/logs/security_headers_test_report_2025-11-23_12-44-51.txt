@@ -1,0 +1,51 @@
+SECURITY HEADERS TEST REPORT
+Generated: 2025-11-23 12:44:51
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 18
+Passed: 18
+Failed: 0
+Pass Rate: 100%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] SecurityHeaders middleware exists
+
+[PASS] Config file exists
+
+[PASS] X-Frame-Options header is set
+
+[PASS] X-Content-Type-Options header is set
+
+[PASS] X-XSS-Protection header is set
+
+[PASS] Referrer-Policy header is set
+
+[PASS] CSP header is set for web pages
+
+[PASS] CSP header is set for API endpoints
+
+[PASS] CSP contains default-src directive
+
+[PASS] CSP contains frame-ancestors directive
+
+[PASS] API CSP is more restrictive
+
+[PASS] Permissions-Policy header is set
+
+[PASS] Cross-Origin-Embedder-Policy is set
+
+[PASS] Cross-Origin-Opener-Policy is set
+
+[PASS] Cross-Origin-Resource-Policy is set
+
+[PASS] X-Powered-By header is removed
+
+[PASS] All critical headers are present
+
+[PASS] Headers are properly formatted

@@ -1,0 +1,37 @@
+RATE LIMITING TEST REPORT
+Generated: 2025-11-23 12:39:09
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 11
+Passed: 11
+Failed: 0
+Pass Rate: 100%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] CustomThrottleRequests middleware exists
+
+[PASS] RateLimiter service can be resolved
+
+[PASS] Config file exists
+
+[PASS] Config has required tiers
+
+[PASS] Config has endpoints configuration
+
+[PASS] Middleware allows requests under limit
+
+[PASS] Middleware blocks requests over limit
+
+[PASS] Middleware adds rate limit headers
+
+[PASS] Middleware adds Retry-After header when limited
+
+[PASS] Different users have separate limits
+
+[PASS] Anonymous users limited by IP

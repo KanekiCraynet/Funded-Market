@@ -1,0 +1,63 @@
+API RESPONSE CACHING TEST REPORT
+Generated: 2025-11-23 13:05:12
+======================================================================
+
+SUMMARY
+-------
+Total Tests: 24
+Passed: 24
+Failed: 0
+Pass Rate: 100%
+
+======================================================================
+
+DETAILED RESULTS
+----------------
+
+[PASS] API cache config file exists
+
+[PASS] API cache is enabled
+
+[PASS] TTL configuration exists
+
+[PASS] Endpoint patterns are configured
+
+[PASS] Cache middleware class exists
+
+[PASS] Cache keys are unique per URL
+
+[PASS] Cache keys include query parameters
+
+[PASS] Cache keys have correct prefix
+
+[PASS] Market endpoints get market TTL
+
+[PASS] Analysis endpoints get analysis TTL
+
+[PASS] Unknown endpoints get default TTL
+
+[PASS] Auth login endpoint is excluded
+
+[PASS] Auth register endpoint is excluded
+
+[PASS] Market endpoints are not excluded
+
+[PASS] no-cache query parameter triggers bypass
+
+[PASS] refresh query parameter triggers bypass
+
+[PASS] Cache-Control: no-cache header triggers bypass
+
+[PASS] GET requests are cached
+
+[PASS] POST requests bypass cache
+
+[PASS] PUT requests bypass cache
+
+[PASS] DELETE requests bypass cache
+
+[PASS] First request is cache MISS
+
+[PASS] Second request is cache HIT
+
+[PASS] Cached response content is correct
