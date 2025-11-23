@@ -1,14 +1,31 @@
 <template>
   <div class="dashboard">
-    <!-- Header -->
+    <!-- Header with Theme Switcher -->
     <div class="dashboard-header">
       <div>
         <h1 class="page-title">Market Dashboard</h1>
         <p class="page-subtitle">Real-time market overview and analysis</p>
       </div>
       
-      <RegimePill v-if="currentRegime" :regime="currentRegime" />
+      <div class="header-actions">
+        <ThemeSwitcher />
+        <RegimePill v-if="currentRegime" :regime="currentRegime" />
+      </div>
     </div>
+
+    <!-- Stats Grid (Phase 5 - Enhanced) -->
+    <StatsGrid :market-summary="marketSummary" />
+
+    <!-- Enhanced Market Card (Phase 5 - Real-time) -->
+    <EnhancedMarketCard 
+      :auto-refresh="true"
+      :refresh-interval="30000"
+      @select-symbol="handleSymbolSelect"
+      @update="handleMarketUpdate"
+    />
+
+    <!-- Analysis Timeline (Phase 5 - Recent Activity) -->
+    <AnalysisTimeline :limit="5" />
 
     <!-- Market Overview Stats -->
     <div class="stats-grid">
